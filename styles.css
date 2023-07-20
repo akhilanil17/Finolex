@@ -19,35 +19,43 @@ body{
 .first{
     background-image: url(./assets/hero-bg.png);
     background-size: cover;
+    min-height: 500px;
 }
 
-.firstImg{
+/* .firstImg{
     height: 100%;
-    /* min-height: 500px; */
+    min-height: 500px;
     object-fit: cover;
     width: 100%;
     position: absolute;
     z-index: -1;
+} */
+
+.first>div{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 0 7rem;
+
 }
 
-.first>h1{
+.first>div>h1{
     color: white;
     font-weight: 800;
     font-size: 40px;
     line-height: 52px;
-    margin: 5rem 0 0 7rem;
+    margin: 1rem 0 0 0;
 }
 
-.first>h6{
+.first>div>h6{
     color: white;
     font-weight: 500;
     font-size: 1.1rem;
     line-height: 30px;
-    margin: 1rem 0 0 7rem;
+    margin: 1rem 0 0 0;
 }
 
 .first_Button{
-    margin: 1rem 0 0 7rem;
+    margin: 1rem 0 0 0;
     background-color: #fff100;
     width: 14.5rem;
     height: 3.5rem;
