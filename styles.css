@@ -16,9 +16,14 @@ body{
     /* border: black solid 2px; */
 }
 
+.first{
+    background-image: url(./assets/hero-bg.png);
+    background-size: cover;
+}
+
 .firstImg{
     height: 100%;
-    min-height: 500px;
+    /* min-height: 500px; */
     object-fit: cover;
     width: 100%;
     position: absolute;
