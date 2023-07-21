@@ -3,6 +3,10 @@ body{
     margin: 0px;
 }
 
+button{
+    cursor: pointer;
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -147,6 +151,7 @@ body{
     font-size: 1rem;
     font-weight: 600;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .third{
@@ -197,6 +202,7 @@ body{
 .btn-tab.active{
     color: #0094d9;
     background-color: #fff100;
+    transition: ease-in-out 0.3s;
 }
 
 .content>p{
@@ -211,7 +217,12 @@ body{
 
 .BandA{
     width: 50%;
+    padding-left: 5rem;
     /* border: black solid 2px; */
+}
+
+.inner-btns{
+    display: flex;
 }
 
 .content-img{
@@ -220,40 +231,63 @@ body{
 }
 
 .content{
-    display: none;
+    display: block;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 .content.active{
-    display: block;
+    opacity: 1;
+    height: auto;
 }
 
 .inner-btn{
-    margin: 2rem 1rem 2rem 5rem;
+    margin: 2rem 1rem 2rem 0rem;
     background-color: white;
+    width: 20%;
     color: rgb(184, 184, 184);
     border: none;
+    border-bottom: 3px solid transparent;
+    outline: none;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 600;  
+    transition: border-bottom 0.3s, transform 0.3s;  
 }
 
 .inner-btn.active{
     color: #12487B;
-    border-bottom: #fff100 solid 3px;
+    border-bottom-color: #fff100;
+    transform: scale(1.1);
 }
 
 .benefit{
-    display: none;
+    display: flex;
     flex-direction: column;
+    transition: opacity 0.5s linear;;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.application{
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 .benefit.active, .application.active{
-    display: flex;
+    opacity: 1;
+    height: auto;
 }
 
 .benefit>div, .application>div{
     height: 5rem;
     display: flex;
-    margin-left: 5rem;
 }
 
 .benefit>div>img, .application>div>img{
@@ -266,8 +300,5 @@ body{
     width: 90%;
 }
 
-.application{
-    display: none;
-    flex-direction: column;
-}
+
 
