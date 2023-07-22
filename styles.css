@@ -10,8 +10,8 @@ button{
 .container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1.18fr 1.1fr 0.6fr 1fr 0.6fr 1fr 1fr 1fr 1fr;
-    height: 4510px;
+    grid-template-rows: 1fr 1fr 0.6fr 1fr 0.9fr 1.2fr 1.1fr 1.5fr 1.5fr;
+    height: 5000px;
     gap: 0rem;
 }
 
@@ -102,6 +102,7 @@ button{
     margin: 4rem 0 4rem 0;
     background-color: white;
     border-radius: 5px;
+    max-width: 1000px;
 }
 
 .form{
@@ -300,5 +301,207 @@ button{
     width: 90%;
 }
 
+.fifth{
+    background-image: url(./assets/why-bg.png);
+    background-size: contain;
+    min-height: 413px;
+}
 
+.whyFinolex-container{
+    padding: 80px 12px 80px 12px;
+    margin: 0 60px;
+}
 
+.whyFinolex-heading{
+    font-weight: 700;
+    color: #0094d9;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+    margin:0 0 40px 0;
+}
+
+.whyFinolex-card-container{
+    display: flex;
+}
+
+.whyFinolex-card{
+    width: 25%;
+    padding: 0 12px;
+}
+
+.card_circle{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 100px;
+    border: 2px solid #0094d9;
+    place-items: center;
+    display: grid;
+}
+
+.gif{
+    height: 40px;
+    width: 40px;
+    border-radius: 10%;
+    object-fit: contain;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-heading{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0094d9;
+    margin-top: 15px;
+    line-height: 26px;
+}
+
+.card-subtext{
+    margin-top: 4px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #58595b;
+    line-height: 24px;
+}
+
+.sixth{
+    background-image: url(./assets/partner-bg.png);
+    background-size: cover;
+}
+
+.partner-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+    padding: 60px 0;
+}
+
+.partner-left{
+    width: 40%;
+}
+
+.partner-right{
+    width: 50%;
+}
+
+.partner-heading{
+    font-weight: 700;
+    font-size: 34px;
+    color: #0094d9;
+}
+
+.partner-subtext{
+    font-weight: 600;
+    font-size: 17px;
+    color: #0094d9;
+    line-height: 24px;
+}
+
+.partner-tab{
+    margin-top: 25px;
+    padding-left: 20px;
+    border-left: 3px solid grey;
+    cursor: pointer;
+    transition: all 0.3s ease, transform 0.3s;  
+}
+
+.tab-heading{
+    font-weight: 500;
+    font-size: 18px;
+    color: #a5a5a5;
+    margin-bottom: 0;
+    transition: all 0.3s ease, transform 0.3s;  
+}
+
+.tab-subtext{
+    font-weight: 500;
+    color: #58595b;
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 4px;
+    display: none;
+    transition: all 0.3s ease, transform 0.3s;  
+}
+
+.tab-subtext.active-tab{
+    display: block;
+    transform: scale(1);
+}
+
+.partner-tab.active-tab{
+    border-color: #0094d9;
+    transition: all 0.3s linear, transform 0.3s;  
+}
+
+.tab-heading.active-tab{
+    font-size: 20px;
+    color: #0094d9;
+    font-weight: 600;
+    transform: scale(1);
+}
+
+#partner-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.seventh{
+    background: #008CD1;
+}
+
+.testimonial-container{
+    padding: 80px 0;
+    margin: 0 60px;
+}
+
+.testimonial-heading{
+    text-align: center;
+}
+
+.testimonial-heading>h1{
+    margin: 18px 0;
+    color: #fff100;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.testimonial-items{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 10px 0;
+}
+
+.video-box{
+    width: 31%;
+    position: relative;
+}
+
+.video-box>video{
+    width: 100%;
+}
+
+.play-btn{
+    background-image: url(./assets/play-button.png);
+    position: absolute;
+    top: 25%;
+    left: 43%;
+    background-position: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
+.video-description{
+    color: white;
+    margin: 10px 0 ;
+    font-size: 15px;
+}
+
+.playing .play-btn{
+    background-image: url(./assets/pause-button.png);
+}

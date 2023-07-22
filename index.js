@@ -1,3 +1,4 @@
+//faq section
 const items = document.querySelectorAll('.nav-items>button')
 const Contents = document.querySelectorAll('.content')
 
@@ -47,3 +48,48 @@ Contents.forEach((content) => {
     })
   })
   
+//partner section
+const partnerTabs = document.querySelectorAll('.partner-tab')
+const tabHeadings = document.querySelectorAll('.tab-heading')
+const tabSubtexts = document.querySelectorAll('.tab-subtext')
+
+partnerTabs.forEach((partnerTab, index) =>{
+  partnerTab.addEventListener('click', () =>{
+    partnerTabs.forEach(partnerTab =>{
+      partnerTab.classList.remove('active-tab')
+    })
+    partnerTab.classList.add('active-tab')
+    
+    tabHeadings.forEach(tabHeading =>{
+      tabHeading.classList.remove('active-tab')
+    })
+    tabHeadings[index].classList.add('active-tab')
+
+    tabSubtexts.forEach(tabSubtext =>{
+      tabSubtext.classList.remove('active-tab')
+    })
+    tabSubtexts[index].classList.add('active-tab')
+
+    const imgPath = partnerTab.getAttribute('data-img')
+    const img = document.querySelector('#partner-img')
+
+    img.src = imgPath
+  })
+})
+
+//testimonials
+var videoElements = document.querySelectorAll('.video-box')
+
+videoElements.forEach((videoElement) =>{
+  videoElement.addEventListener('click', () =>{
+    var video = videoElement.querySelector('video')
+
+    if(video.paused){
+      video.play();
+    }else {
+      video.pause();
+    }
+    
+    videoElement.classList.toggle('playing')
+  })
+})
