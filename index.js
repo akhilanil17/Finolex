@@ -1,4 +1,4 @@
-//faq section
+//Products section
 const items = document.querySelectorAll('.nav-items>button')
 const Contents = document.querySelectorAll('.content')
 
@@ -16,6 +16,7 @@ items.forEach((item, index) => {
     })
 })
 
+//Benefits and Applications Section
 Contents.forEach((content) => {
     const innerBtns = content.querySelectorAll('.inner-btn')
     const Benefits = content.querySelectorAll('.benefit')
@@ -48,7 +49,7 @@ Contents.forEach((content) => {
     })
   })
   
-//partner section
+//Partner section
 const partnerTabs = document.querySelectorAll('.partner-tab')
 const tabHeadings = document.querySelectorAll('.tab-heading')
 const tabSubtexts = document.querySelectorAll('.tab-subtext')
@@ -91,5 +92,21 @@ videoElements.forEach((videoElement) =>{
     }
     
     videoElement.classList.toggle('playing')
+  })
+})
+
+//faq section
+const faqs = document.querySelectorAll('.faq-box')
+
+faqs.forEach((faq) =>{
+  faq.addEventListener('click', () =>{
+    const isActive = faq.classList.contains('active-faq')
+    faqs.forEach(faq => {
+      faq.classList.remove('active-faq')
+    })
+    
+    if (!isActive) {
+      faq.classList.add('active-faq')
+    }
   })
 })
