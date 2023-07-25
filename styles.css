@@ -58,7 +58,7 @@ button{
     margin: 1rem 0 0 0;
 }
 
-.first_Button{
+.first-button{
     margin: 1rem 0 0 0;
     background-color: #fff100;
     width: 14.5rem;
@@ -68,7 +68,7 @@ button{
     text-align: center; 
 }
 
-.first_Button>a{
+.first-button>a{
     text-decoration: none;
     color: #0094d9;
     font-weight: 600;
@@ -594,4 +594,57 @@ button{
 .active-faq>.faq-question>div>img{
     transform: rotate(45deg);
     transition: all ease-out 0.3s;
+}
+
+.about-top{
+    position: relative;
+    height: 100%;
+    background-image: url(./assets/about-bg.png);
+    
+}
+
+.about-bottom{
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    background-image: url(./assets/about-bg-n.png);
+    background-repeat: no-repeat;
+    top: 72%;
+}
+
+.about-container{
+    padding-top: 40px;
+    margin: 0 60px;
+    text-align: center;
+}
+
+.about-container>h1{
+    font-weight: 700;
+    font-size: 34px;
+    color: #fff100;
+    margin-top: 5px;
+}
+
+.about-container>p{
+    color: white;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.about-button{
+    margin: 1rem 0 0 0;
+    text-decoration: none;
+    background-color: #fff100;
+    width: 18rem;
+    height: 4rem;
+    border-style: none;
+    border-radius: 3px;
+    text-align: center; 
+}
+
+.about-button>a{
+    text-decoration: none;
+    color: #0094d9;
+    font-weight: 600;
+    font-size: 1rem;
 }
